@@ -1,0 +1,16 @@
+library project Cre8or_Raw_Window_Handle is
+
+	for Create_Missing_Dirs use "True";
+	for Languages use ("Ada");
+	for Library_Name use "Cre8or_Raw_Window_Handle";
+	for Source_Dirs use ("src/");
+	for Object_Dir use "obj";
+	for Library_Dir use "lib";
+	for Library_Kind use "Static";
+
+	-- Switches
+	package Compiler is
+		for Default_Switches ("ada") use ("-gnat12", "-gnatwa", "-gnatwl", "-gnatwe", "-gnatwV", "-gnatwJ", "-fstack-check", "-gnaty3abcefhiklmNprt", "-E");
+	end Compiler;
+
+end Cre8or_Raw_Window_Handle;

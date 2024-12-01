@@ -1,0 +1,13 @@
+name = "cre8or_raw_window_handle"
+description = "Common windowing library for Ada"
+version = "1.0.0"
+
+authors = ["Cre8or"]
+maintainers = ["Cre8or <cre8or@tuta.io>"]
+maintainers-logins = ["Cre8or"]
+licenses = "Apache-2.0"
+website = "https://github.com/Cre8or/Raw-Window-Handle-Ada"
+tags = ["cre8or", "window", "windowing", "library", "windows", "win32", "linux", "unix", "x11", "quartz", "macos", "cocoa"]
+
+[configuration]
+disabled = true
