@@ -46,7 +46,7 @@ package Cre8or_Raw_Window_Handle is
 				appkit_ns_view : System.Address := System.Null_Address;
 
 			when E_Windows =>
-				win_hwnd : System.Address := System.Null_Address;
+				win_hwnd      : System.Address := System.Null_Address;
 				win_hinstance : System.Address := System.Null_Address;
 
 			when E_Xlib =>
