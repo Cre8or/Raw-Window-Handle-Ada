@@ -58,7 +58,7 @@ package Cre8or_Raw_Window_Handle is
 			when E_Xcb =>
 				xcb_connection : System.Address             := System.Null_Address;
 				xcb_screen     : Interfaces.C.int           := 0;
-				xcb_window     : Interfaces.C.unsigned_long := 0;
+				xcb_window     : Interfaces.C.int           := 0;
 				xcb_visual_id  : Interfaces.C.unsigned_long := 0;
 
 			when E_Wayland =>
