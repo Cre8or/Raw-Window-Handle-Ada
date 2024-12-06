@@ -34,7 +34,7 @@ package Cre8or_Raw_Window_Handle is
 	-- Types
 	type T_Kind is (
 		E_AppKit,
-		E_Windows,
+		E_Win32,
 		E_Xlib,
 		E_Xcb,
 		E_Wayland
@@ -45,9 +45,9 @@ package Cre8or_Raw_Window_Handle is
 			when E_AppKit =>
 				appkit_ns_view : System.Address := System.Null_Address;
 
-			when E_Windows =>
-				win_hwnd      : System.Address := System.Null_Address;
-				win_hinstance : System.Address := System.Null_Address;
+			when E_Win32 =>
+				win32_hwnd      : System.Address := System.Null_Address;
+				win32_hinstance : System.Address := System.Null_Address;
 
 			when E_Xlib =>
 				xlib_display   : System.Address             := System.Null_Address;
@@ -56,10 +56,10 @@ package Cre8or_Raw_Window_Handle is
 				xlib_visual_id : Interfaces.C.unsigned_long := 0;
 
 			when E_Xcb =>
-				xcb_connection : System.Address             := System.Null_Address;
-				xcb_screen     : Interfaces.C.int           := 0;
-				xcb_window     : Interfaces.C.int           := 0;
-				xcb_visual_id  : Interfaces.C.unsigned_long := 0;
+				xcb_connection : System.Address   := System.Null_Address;
+				xcb_screen     : Interfaces.C.int := 0;
+				xcb_window_id  : Interfaces.C.int := 0;
+				xcb_visual_id  : Interfaces.C.int := 0;
 
 			when E_Wayland =>
 				wayland_display : System.Address := System.Null_Address;
